@@ -1,12 +1,12 @@
 import { render } from "@testing-library/react";
 import { axe, toHaveNoViolations } from "jest-axe";
-import Button from "./Button";
+import Text from "./Text";
 
 expect.extend(toHaveNoViolations);
 
-describe('Button test suite', ()=>{
-    test('test Button render', async()=>{
-        const { container } = render(<Button variant={"light"}>Click me</Button>);
+describe('Text test suite', ()=>{
+    test('test Text render', async()=>{
+        const { container } = render(<Text>Read me</Text>);
         const results = await axe(container);
       
         expect(results).toHaveNoViolations();
