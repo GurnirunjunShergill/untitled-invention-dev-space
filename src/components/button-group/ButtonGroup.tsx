@@ -4,10 +4,10 @@ import { ButtonGroupProps } from "./ButtonGroupTypes";
 const StyledButtonGroup = styled.div<{ $listHorizontal?: boolean}>`
     display: flex;
     flex-direction: ${props => props.$listHorizontal ? 'column' : 'row'};
-    width: ${props => props.$listHorizontal ? 'fit-content' : 'unset'}
+    width: fit-content;
 `;
 
-const ButtonGroup = ({
+const ButtonGroup: React.FC<ButtonGroupProps> = ({
     listHorizontal = false,
     children,
 }:ButtonGroupProps)=>{
