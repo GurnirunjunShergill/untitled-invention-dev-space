@@ -2,6 +2,7 @@ import "./App.css";
 import ButtonGroup from "./components/button-group/ButtonGroup";
 import Button from "./components/button/Button";
 import Checkbox from "./components/checkbox/Checkbox";
+import Image from "./components/image/Image";
 import Input from "./components/input/Input";
 import Text from "./components/text/Text";
 
@@ -22,6 +23,7 @@ function App() {
       </ButtonGroup>
       <Checkbox htmlForId={"checkbox-1"} children={<Text>checkbox</Text>}/>
       <Input/>
+      <Image/>
     </>
   );
 }
